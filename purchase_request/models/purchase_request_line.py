@@ -70,7 +70,8 @@ class PurchaseRequestLine(models.Model):
                                      store=True)
     supplier_id = fields.Many2one('res.partner',
                                   string='Preferred supplier',
-                                  compute="_compute_supplier_id")
+                                  compute="_compute_supplier_id",
+                                  store=True)
     cancelled = fields.Boolean(
         string="Cancelled", readonly=True, default=False, copy=False)
 
@@ -222,6 +223,7 @@ class PurchaseRequestLine(models.Model):
             rec.is_editable = False
 
     @api.multi
+    @api.depends('product_id', 'product_id.seller_ids')
     def _compute_supplier_id(self):
         for rec in self:
             if rec.product_id:
@@ -351,9 +353,20 @@ class PurchaseRequestLine(models.Model):
         return qty
 
     @api.multi
+    def _can_be_deleted(self):
+        self.ensure_one()
+        return self.request_state == 'draft'
+
+    @api.multi
     def unlink(self):
         if self.mapped('purchase_lines'):
             raise UserError(
                 _('You cannot delete a record that refers to purchase '
                   'lines!'))
+        for line in self:
+            if not line._can_be_deleted():
+                raise UserError(_(
+                    'You can only delete a purchase request line '
+                    'if the purchase request is in draft state.'
+                ))
         return super(PurchaseRequestLine, self).unlink()

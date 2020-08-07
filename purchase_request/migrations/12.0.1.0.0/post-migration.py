@@ -26,25 +26,26 @@ def create_service_allocation(env, po_line, pr_line, qty):
     return alloc
 
 
-def allocate_from_stock_move(env, ml, alloc_uom, ml_done=None):
+def allocate_from_stock_move(env, mls, alloc_uom, ml_done=None):
     #  done here because open_product_qty is zero so cannot call method in
     #  stock_move_line
     if ml_done is None:
         ml_done = []
-    to_allocate_qty = ml.product_uom_id._compute_quantity(
-        ml.qty_done, alloc_uom)
-    for allocation in \
-            ml.filtered(
-                lambda m: m.id not in ml_done).move_id.\
-            purchase_request_allocation_ids:
-        if to_allocate_qty > 0.0 and \
-                allocation.allocated_product_qty < \
-                allocation.requested_product_uom_qty:
-            allocated_qty = min(
-                allocation.requested_product_uom_qty, to_allocate_qty)
-            allocation.allocated_product_qty += allocated_qty
-            to_allocate_qty -= allocated_qty
-        ml_done.append(ml.id)
+    for ml in mls:
+        to_allocate_qty = ml.product_uom_id._compute_quantity(
+            ml.qty_done, alloc_uom)
+        for allocation in \
+                ml.filtered(
+                    lambda m: m.id not in ml_done).move_id.\
+                purchase_request_allocation_ids:
+            if to_allocate_qty > 0.0 and \
+                    allocation.allocated_product_qty < \
+                    allocation.requested_product_uom_qty:
+                allocated_qty = min(
+                    allocation.requested_product_uom_qty, to_allocate_qty)
+                allocation.allocated_product_qty += allocated_qty
+                to_allocate_qty -= allocated_qty
+            ml_done.append(ml.id)
     return ml_done
 
 
@@ -83,7 +84,7 @@ def allocate_stockable(env):
             # we allocated what is in the stock move
             create_allocation(
                 env, purchase_order_line_id, purchase_request_line_id,
-                sm_id, pending_qty, alloc_uom)
+                sm_id, pending_qty)
             #  cannot call super, open_qty is zero
             sm = env['stock.move'].browse(sm_id)
             if sm.state == 'done':
@@ -94,7 +95,7 @@ def allocate_stockable(env):
             req_qty = sm_uom._compute_quantity(req_qty, alloc_uom)
             create_allocation(
                 env, purchase_order_line_id, purchase_request_line_id,
-                False, req_qty, alloc_uom)
+                False, req_qty)
         purchase_request_line._compute_qty()
 
 
@@ -121,6 +122,7 @@ def allocate_service(env):
             purchase_request_line_id)
         product_alloc_uom = \
             purchase_request_line.product_uom_id or pol_product_uom
+        pol_product_uom = env['uom.uom'].browse(pol_product_uom)
         product_alloc_qty = pol_product_uom._compute_quantity(
             product_qty, product_alloc_uom)
         alloc = create_service_allocation(
