@@ -29,28 +29,28 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[procurement_purchase_no_grouping](procurement_purchase_no_grouping/) | 13.0.3.0.0 |  | Procurement Purchase No Grouping
+[procurement_purchase_no_grouping](procurement_purchase_no_grouping/) | 13.0.3.0.1 |  | Procurement Purchase No Grouping
 [procurement_purchase_sale_no_grouping](procurement_purchase_sale_no_grouping/) | 13.0.1.0.0 |  | Procurement Purchase Service No Grouping
 [product_form_purchase_link](product_form_purchase_link/) | 13.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Add an option to display the purchases lines from product
 [product_supplierinfo_qty_multiplier](product_supplierinfo_qty_multiplier/) | 13.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Product supplierinfo qty multiplier
 [purchase_all_shipments](purchase_all_shipments/) | 13.0.1.0.0 |  | Purchase All Shipments
 [purchase_allowed_product](purchase_allowed_product/) | 13.0.1.0.0 |  | This module allows to select only products that can be supplied by the vendor
-[purchase_blanket_order](purchase_blanket_order/) | 13.0.2.0.0 |  | Purchase Blanket Orders
+[purchase_blanket_order](purchase_blanket_order/) | 13.0.2.1.3 |  | Purchase Blanket Orders
 [purchase_commercial_partner](purchase_commercial_partner/) | 13.0.1.0.0 |  | Add stored related field 'Commercial Supplier' on POs
 [purchase_delivery_split_date](purchase_delivery_split_date/) | 13.0.1.0.5 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
 [purchase_deposit](purchase_deposit/) | 13.0.1.0.1 |  | Option to create deposit from purchase order
-[purchase_discount](purchase_discount/) | 13.0.1.0.5 |  | Purchase order lines with discounts
+[purchase_discount](purchase_discount/) | 13.0.1.0.6 |  | Purchase order lines with discounts
 [purchase_exception](purchase_exception/) | 13.0.1.0.0 |  | Custom exceptions on purchase order
-[purchase_force_invoiced](purchase_force_invoiced/) | 13.0.1.0.0 |  | Allows to force the billing status of the purchase order to "Invoiced"
+[purchase_force_invoiced](purchase_force_invoiced/) | 13.0.1.0.1 |  | Allows to force the billing status of the purchase order to "Invoiced"
 [purchase_invoice_plan](purchase_invoice_plan/) | 13.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to purchases order, ability to manage future invoice plan
 [purchase_isolated_rfq](purchase_isolated_rfq/) | 13.0.1.1.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Purchase Isolated RFQ
 [purchase_landed_cost](purchase_landed_cost/) | 13.0.1.1.0 |  | Purchase cost distribution
-[purchase_last_price_info](purchase_last_price_info/) | 13.0.2.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Purchase Product Last Price Info
+[purchase_last_price_info](purchase_last_price_info/) | 13.0.2.0.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Purchase Product Last Price Info
 [purchase_line_procurement_group](purchase_line_procurement_group/) | 13.0.1.0.1 |  | Group purchase order line according to procurement group
 [purchase_location_by_line](purchase_location_by_line/) | 13.0.1.0.0 |  | Allows to define a specific destination location on each PO line
 [purchase_manual_currency](purchase_manual_currency/) | 13.0.1.0.2 |  | Allows to manual currency of Purchase
 [purchase_minimum_amount](purchase_minimum_amount/) | 13.0.1.0.1 |  | Purchase Minimum Amount
-[purchase_open_qty](purchase_open_qty/) | 13.0.1.0.1 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
+[purchase_open_qty](purchase_open_qty/) | 13.0.1.1.0 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
 [purchase_order_approval_block](purchase_order_approval_block/) | 13.0.1.0.2 |  | Purchase Order Approval Block
 [purchase_order_approved](purchase_order_approved/) | 13.0.1.1.0 |  | Add a new state 'Approved' in purchase orders.
 [purchase_order_archive](purchase_order_archive/) | 13.0.1.0.0 |  | Archive Purchase Orders
@@ -88,7 +88,7 @@ addon | version | maintainers | summary
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 13.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_security](purchase_security/) | 13.0.1.1.0 | [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | See only your purchase orders
 [purchase_stock_picking_show_currency_rate](purchase_stock_picking_show_currency_rate/) | 13.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Show currency rate in purchase stock picking.
-[purchase_stock_price_unit_sync](purchase_stock_price_unit_sync/) | 13.0.1.0.1 |  | Update cost price in stock moves already done
+[purchase_stock_price_unit_sync](purchase_stock_price_unit_sync/) | 13.0.1.0.2 |  | Update cost price in stock moves already done
 [purchase_stock_return_request](purchase_stock_return_request/) | 13.0.1.0.0 |  | Purchase Stock Return Request
 [purchase_stock_secondary_unit](purchase_stock_secondary_unit/) | 13.0.1.0.2 |  | Get product quantities in a secondary unit
 [purchase_substate](purchase_substate/) | 13.0.1.0.0 |  | Purchase Sub State
