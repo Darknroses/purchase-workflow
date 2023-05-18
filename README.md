@@ -34,7 +34,7 @@ addon | version | maintainers | summary
 [purchase_cancel_reason](purchase_cancel_reason/) | 14.0.1.0.0 |  | Purchase Cancel Reason
 [purchase_commercial_partner](purchase_commercial_partner/) | 14.0.1.0.0 |  | Add stored related field 'Commercial Supplier' on POs
 [purchase_delivery_split_date](purchase_delivery_split_date/) | 14.0.1.1.1 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
-[purchase_deposit](purchase_deposit/) | 14.0.1.1.1 |  | Option to create deposit from purchase order
+[purchase_deposit](purchase_deposit/) | 14.0.1.1.2 |  | Option to create deposit from purchase order
 [purchase_discount](purchase_discount/) | 14.0.1.2.0 |  | Purchase order lines with discounts
 [purchase_exception](purchase_exception/) | 14.0.1.0.0 |  | Custom exceptions on purchase order
 [purchase_fop_shipping](purchase_fop_shipping/) | 14.0.1.1.0 |  | Purchase Free-Of-Payment shipping
@@ -61,7 +61,7 @@ addon | version | maintainers | summary
 [purchase_order_line_invoicing](purchase_order_line_invoicing/) | 14.0.1.0.0 |  | Allows to invoice lines of multiple purchase orders
 [purchase_order_line_menu](purchase_order_line_menu/) | 14.0.1.0.0 |  | Adds Purchase Order Lines Menu
 [purchase_order_line_packaging_qty](purchase_order_line_packaging_qty/) | 14.0.1.0.1 |  | Define quantities according to product packaging on purchase order lines
-[purchase_order_line_price_history](purchase_order_line_price_history/) | 14.0.1.0.0 |  | Purchase order line price history
+[purchase_order_line_price_history](purchase_order_line_price_history/) | 14.0.1.1.0 |  | Purchase order line price history
 [purchase_order_line_stock_available](purchase_order_line_stock_available/) | 14.0.1.0.0 |  | Purchase order line stock available
 [purchase_order_payment_term_report](purchase_order_payment_term_report/) | 14.0.1.0.0 |  | Display Purchase Payment Terms in PO Report
 [purchase_order_price_recalculation](purchase_order_price_recalculation/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Price recalculation in purchases orders
@@ -80,7 +80,7 @@ addon | version | maintainers | summary
 [purchase_propagate_qty](purchase_propagate_qty/) | 14.0.1.0.3 |  | Quantity decrease on purchase line are propagated to the corresponding stock.move
 [purchase_quick](purchase_quick/) | 14.0.1.0.1 |  | Quick Purchase order
 [purchase_reception_notify](purchase_reception_notify/) | 14.0.1.0.0 |  | Purchase Reception Notify
-[purchase_reception_status](purchase_reception_status/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add reception status on purchase orders
+[purchase_reception_status](purchase_reception_status/) | 14.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add reception status on purchase orders
 [purchase_report_menu_move](purchase_report_menu_move/) | 14.0.1.0.0 | [![newtratip](https://github.com/newtratip.png?size=30px)](https://github.com/newtratip) | Purchase Report Menu Move
 [purchase_representative](purchase_representative/) | 14.0.1.0.0 |  | Purchase Representatives will be the point of contact for RFQ's and PO's
 [purchase_request](purchase_request/) | 14.0.2.1.1 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
@@ -91,7 +91,7 @@ addon | version | maintainers | summary
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 14.0.2.1.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
 [purchase_request_to_requisition](purchase_request_to_requisition/) | 14.0.1.0.0 |  | Purchase Request to Purchase Agreement
 [purchase_request_type](purchase_request_type/) | 14.0.1.0.1 |  | Purchase Request Type
-[purchase_requisition_auto_rfq](purchase_requisition_auto_rfq/) | 14.0.1.0.0 |  | Automatically create RFQs from a purchase requisition
+[purchase_requisition_auto_rfq](purchase_requisition_auto_rfq/) | 14.0.1.1.0 |  | Automatically create RFQs from a purchase requisition
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 14.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_rfq_number](purchase_rfq_number/) | 14.0.1.1.0 |  | Different sequence for purchase for quotations
 [purchase_security](purchase_security/) | 14.0.1.0.0 | [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | See only your purchase orders
@@ -99,6 +99,7 @@ addon | version | maintainers | summary
 [purchase_stock_secondary_unit](purchase_stock_secondary_unit/) | 14.0.1.0.0 |  | Get product quantities in a secondary unit
 [purchase_stock_tier_validation](purchase_stock_tier_validation/) | 14.0.1.0.0 |  | Exclude RFQs pending to validate when procuring
 [purchase_stock_vendor_bill_breakdown](purchase_stock_vendor_bill_breakdown/) | 14.0.1.0.0 | [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Purchase Stock Vendor Bill Product Breakdown
+[purchase_substate](purchase_substate/) | 14.0.1.0.0 |  | Purchase Sub State
 [purchase_supplierinfo_product_breakdown](purchase_supplierinfo_product_breakdown/) | 14.0.1.0.0 |  | Purchase Supplierinfo Product Breakdown
 [purchase_tag](purchase_tag/) | 14.0.1.0.0 |  | Allows to add multiple tags to purchase orders
 [purchase_tier_validation](purchase_tier_validation/) | 14.0.2.0.1 |  | Extends the functionality of Purchase Orders to support a tier validation process.
